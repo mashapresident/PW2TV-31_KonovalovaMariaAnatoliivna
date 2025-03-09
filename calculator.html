@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор викидів</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Калькулятор викидів</h2>
+        <label>Кількість вугілля (т)</label>
+        <input id="coal" type="number" class="input-field" value="1096363">
+        
+        <label>Кількість мазуту (т)</label>
+        <input id="mazut" type="number" class="input-field" value="70945">
+        
+        <label>Обсяг природного газу (тис. м3)</label>
+        <input id="gas" type="number" class="input-field" value="84762">
+        
+        <button onclick="calculateEmissions()">Розрахувати</button>
+        <div id="result" class="result"></div>
+    </div>
+</body>
+</html>
